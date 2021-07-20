@@ -1,0 +1,35 @@
+$blue : #6680CA;
+$dark: #232323;
+
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin webMargin {
+    margin: 100px;
+}
+@mixin buttonDesign {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: $blue;
+    cursor: pointer;
+}
+@mixin hoveringButton {
+    background-color: transparent;
+    border: 1px solid $blue;
+    color: $dark;
+}
+
+@mixin tablet {
+    @media screen and(max-width:800px){
+        @content;
+    }
+}
+
+// tablet padding
+@mixin responsivePadding {
+    margin: 50px 20px;
+}

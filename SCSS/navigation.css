@@ -1,0 +1,88 @@
+nav .navBar {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  nav .navBar .brandLogo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav .navBar .centerLinks {
+    display: none;
+  }
+}
+
+nav .navBar .centerLinks a {
+  margin: 0px 15px;
+  color: #232323;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  nav .navBar .rightIcon {
+    display: none;
+  }
+}
+
+nav .navBar .rightIcon a {
+  margin: 0px 15px;
+  position: relative;
+  display: inline-block;
+}
+
+nav .navBar .rightIcon a img {
+  width: 24px;
+}
+
+nav .navBar .rightIcon a .tooltips {
+  visibility: hidden;
+  width: 100px;
+  background-color: #bbbaba;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+nav .navBar .rightIcon a:hover .tooltips {
+  visibility: visible;
+}
+
+nav .navBar .menuBar {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  nav .navBar .menuBar {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav .navBar .menuBar {
+    display: block;
+  }
+}
+/*# sourceMappingURL=navigation.css.map */
